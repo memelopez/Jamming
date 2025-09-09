@@ -10,6 +10,10 @@ body {
   line-height: 1.6;
 }
 
+h1, h2, h3 {
+  margin: 0;
+}
+
 /* app */
 .App {
   position: fixed;
@@ -21,7 +25,20 @@ body {
 
   width: 100%;
   height: 100%;
-  background: #301934;
+  background: #502a56;
+
+  border: 1px solid white;
 
   color: white;
+}
+
+/* header */
+.header {
+  background-color: #323967;
+  border-bottom: 3px dashed #000;
+  height: 85px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
