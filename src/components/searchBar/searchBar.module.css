@@ -1,0 +1,39 @@
+/* searchBar.module.css */
+.searchBarContainer {
+  background-color: darkgreen;
+  height: 450px;
+  width: 100%;
+}
+
+.songForm {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-top: 130px;
+}
+
+.songFormInput {
+  width: 45%;
+  height: 45px;
+  margin: 1em 0;
+  padding: 0.25em 0.35em;
+  font-size: 1.2em;
+  border-radius: 10px;
+  border: none;
+}
+
+.songFormBtn {
+  font-size: 1.53em;
+  padding: 0.4em 0;
+  margin: 1.35em;
+  background-color: #323967;
+  color: #fff;
+  box-shadow: none;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  width: 20%;
+}

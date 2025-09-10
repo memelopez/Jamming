@@ -35,7 +35,7 @@ h1, h2, h3 {
 /* header */
 .header {
   background-color: #323967;
-  border-bottom: 3px dashed #000;
+  border-bottom: 3px solid #000;
   height: 85px;
   width: 100%;
   display: flex;
