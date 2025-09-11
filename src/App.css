@@ -30,6 +30,8 @@ h1, h2, h3 {
   border: 1px solid white;
 
   color: white;
+  
+  overflow: auto;
 }
 
 /* header */
