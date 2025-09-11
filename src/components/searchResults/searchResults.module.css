@@ -6,13 +6,55 @@
 }
 
 .forPlaylist {
-  width: 47%;
-  height: 600px;
+  width: 57%;
+  min-height: 600px;
   background-color: #000934;
+  padding: 0.5em;
+  border-left: 5px solid #000;
+  border-right: 5px solid #000;
+  border-radius: 8px;
+}
+
+.forPlaylist h2 {
+  font-size: 2em;
 }
 
 .forTracklist {
-  width: 47%;
-  height: 600px;
+  width: 40%;
+  min-height: 600px;
   background-color: #000934;
+  padding: 0.5em;
+  border-left: 5px solid #000;
+  border-right: 5px solid #000;
+  border-radius: 8px;
+}
+
+.savePlaylistForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.playlistNameInput {
+  width: 100%;
+  font-size: 1.45em;
+  color: white;
+  background-color: #000934;
+  border: none;
+  border-bottom: 1px solid white;
+  margin-bottom: 0.5em;
+}
+
+.savePlaylistBtn {
+  font-size: 1.23em;
+  padding: 0.6em 0;
+  margin: 0.35em;
+  background-color: #5332cd;
+  color: #fff;
+  box-shadow: none;
+  border-radius: 50px;
+  border: 1px solid #000;
+  width: 55%;
 }
