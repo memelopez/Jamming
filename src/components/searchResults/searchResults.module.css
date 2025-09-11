@@ -1,0 +1,18 @@
+.searchResultsContainer {
+  width: 85%;
+  margin: 2em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.forPlaylist {
+  width: 47%;
+  height: 600px;
+  background-color: #323967;
+}
+
+.forTracklist {
+  width: 47%;
+  height: 600px;
+  background-color: #323967;
+}

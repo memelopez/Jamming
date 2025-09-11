@@ -1,5 +1,6 @@
 import './App.css';
 import SearchBar from './components/searchBar/SearchBar';
+import SearchResults from './components/searchResults/SearchResults';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
         <h1>Jamming</h1>
       </div>
       <SearchBar />
+      <SearchResults />
     </div>
   );
 }
