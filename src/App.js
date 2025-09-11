@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <div className="header">
-        <h1>Jamming</h1>
+        <h1>Ja<span className="mmsInsideJamming">mmm</span>ing</h1>
       </div>
       <SearchBar />
       <SearchResults />
