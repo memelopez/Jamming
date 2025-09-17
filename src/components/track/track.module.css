@@ -1,0 +1,12 @@
+/* track css */
+h3, h4, h5 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.trackContainer {
+  border-bottom: 1px solid #fff;
+}
