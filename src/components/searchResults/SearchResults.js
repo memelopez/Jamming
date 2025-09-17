@@ -1,26 +1,33 @@
 import React from 'react';
 import styles from './searchResults.module.css';
-import Track from '../track/Track';
+import Tracklist from '../tracklist/Tracklist';
 
-const track1 = {
-  songName: 'First Date',
-  songArtist: 'Blink 182',
-  songAlbum: 'Take Off Your Pants and Jacket'
-};
+const tracklistHC = [
+  {
+    name: 'First Date',
+    artist: 'Blink 182',
+    album: 'Take Off Your Pants and Jacket'
+  },
+  {
+    name: 'Hey Ya!',
+    artist: 'Outkast',
+    album: 'Speakerboxxx/The Love Below'
+  },
+  {
+    name: 'All Star',
+    artist: 'Smashmouth',
+    album: 'Astro Lounge'
+  },
+];
 
 const SearchResults = () => {
   return (
     <div className={styles.searchResultsContainer}>
       <div className={styles.forPlaylist}>
         <h2>Results</h2>
-          <ul>
-            <Track 
-              songName={track1.songName}
-              songArtist={track1.songArtist}
-              songAlbum={track1.songAlbum}
-              addOrDeleteSign={true}
-            />
-          </ul>
+          <Tracklist
+            tracks={tracklistHC}
+          />
       </div>
       <div className={styles.forTracklist}>
         <form className={styles.savePlaylistForm}>
