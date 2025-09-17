@@ -45,6 +45,10 @@ h1, h2, h3 {
   align-items: center;
 }
 
+.header h1 {
+  cursor: pointer;
+}
+
 .mmsInsideJamming {
   color: #5332cd;
 }
