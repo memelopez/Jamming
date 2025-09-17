@@ -9,4 +9,25 @@ p {
 
 .trackContainer {
   border-bottom: 1px solid #fff;
+  display: flex;
+  justify-content: space-between;
+  /* padding: 0.25em 0.5em 0 0; */
 }
+
+.trackArtistAlbum {
+  margin-bottom: 0.55em;
+  font-size: 1.11em;
+}
+
+.addDeleteBtnContainer {
+  display: flex;
+  align-items: center;
+}
+
+.addDeleteBtn {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
