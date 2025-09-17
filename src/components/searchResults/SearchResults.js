@@ -18,6 +18,7 @@ const SearchResults = () => {
               songName={track1.songName}
               songArtist={track1.songArtist}
               songAlbum={track1.songAlbum}
+              addOrDeleteSign={true}
             />
           </ul>
       </div>
