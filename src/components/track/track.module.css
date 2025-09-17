@@ -12,6 +12,7 @@ p {
   display: flex;
   justify-content: space-between;
   /* padding: 0.25em 0.5em 0 0; */
+  margin-bottom: 0.25em;
 }
 
 .trackArtistAlbum {

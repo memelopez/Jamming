@@ -13,8 +13,8 @@ const Track = (props) => {
   return (
     <li className={styles.trackContainer}>
       <div className={styles.trackInfo}>
-        <h3 className={styles.trackName}>{props.songName}</h3>
-        <p className={styles.trackArtistAlbum}>{`${props.songArtist} -||- ${props.songAlbum}`}</p>
+        <h3 className={styles.trackName}>{props.name}</h3>
+        <p className={styles.trackArtistAlbum}>{`${props.artist} -||- ${props.album}`}</p>
       </div>
       <div className={styles.addDeleteBtnContainer}>
         <button aria-label={`${props.addOrDeleteSign?'Add':'Delete'} song`} className={styles.addDeleteBtn}>
