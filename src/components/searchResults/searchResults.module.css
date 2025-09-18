@@ -44,13 +44,17 @@
   background-color: #000934;
   border: none;
   border-bottom: 1px solid white;
-  margin-bottom: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.save2playlist {
+  width: 100%;
 }
 
 .savePlaylistBtn {
   font-size: 1.23em;
   padding: 0.6em 0;
-  margin: 0.35em;
+  margin: 1.35em 0.35em;
   background-color: #5332cd;
   color: #fff;
   box-shadow: none;

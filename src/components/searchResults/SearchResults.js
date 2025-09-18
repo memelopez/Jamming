@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './searchResults.module.css';
 import Tracklist from '../tracklist/Tracklist';
+import Playlist from '../playlist/Playlist';
 
 const tracklistHC = [
   {
@@ -33,6 +34,9 @@ const SearchResults = () => {
         <form className={styles.savePlaylistForm}>
           <input type="text" name="playlistNameInput" id="playlistNameInput" className={styles.playlistNameInput} placeholder='Playlist Name'/>
           <div className={styles.save2playlist}>
+            <Playlist 
+              tracks={tracklistHC}
+            />
           </div>
           <input type="submit" value="SAVE TO SPOTIFY" className={styles.savePlaylistBtn}/>
         </form>
