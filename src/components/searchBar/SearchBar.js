@@ -5,7 +5,7 @@ function SearchBar() {
   return (
     <div className={styles.searchBarContainer}>
       <form className={styles.songForm}>
-        <input type="text" name="songSearchInput" id="songSearchInput" className={styles.songFormInput}/>
+        <input type="text" name="songSearchInput" id="songSearchInput" className={styles.songFormInput} placeholder="Search for song"/>
         <input type="submit" value="SEARCH" className={styles.songFormBtn}/>
       </form>
     </div>
