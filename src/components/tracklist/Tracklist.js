@@ -6,7 +6,9 @@ const Tracklist = (props) => {
   return (
     <ul className={styles.trackList}>
       {props.tracks.map((track) => (
-        <Track 
+        <Track
+          key={track.id}
+          id={track.id}
           name={track.name}
           artist={track.artist}
           album={track.album}
