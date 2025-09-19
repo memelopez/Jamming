@@ -3,31 +3,13 @@ import styles from './searchResults.module.css';
 import Tracklist from '../tracklist/Tracklist';
 import Playlist from '../playlist/Playlist';
 
-const tracklistHC = [
-  {
-    name: 'First Date',
-    artist: 'Blink 182',
-    album: 'Take Off Your Pants and Jacket'
-  },
-  {
-    name: 'Hey Ya!',
-    artist: 'Outkast',
-    album: 'Speakerboxxx/The Love Below'
-  },
-  {
-    name: 'All Star',
-    artist: 'Smashmouth',
-    album: 'Astro Lounge'
-  },
-];
-
-const SearchResults = () => {
+const SearchResults = (props) => {
   return (
     <div className={styles.searchResultsContainer}>
       <div className={styles.forPlaylist}>
         <h2>Results</h2>
           <Tracklist
-            tracks={tracklistHC}
+            tracks={props.tracklist}
           />
       </div>
       <div className={styles.forTracklist}>
@@ -35,7 +17,7 @@ const SearchResults = () => {
           <input type="text" name="playlistNameInput" id="playlistNameInput" className={styles.playlistNameInput} placeholder='Playlist Name'/>
           <div className={styles.save2playlist}>
             <Playlist 
-              tracks={tracklistHC}
+              tracks={props.tracklist}
             />
           </div>
           <input type="submit" value="SAVE TO SPOTIFY" className={styles.savePlaylistBtn}/>
