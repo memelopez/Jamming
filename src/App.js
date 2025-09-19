@@ -97,8 +97,10 @@ const tracklistHC = [
 ];
 
 function App() {
-  // const [newSearch, setNewSearch] = useState('');
-  const [allTracks, setAllTasks] = useState([
+  // state variables
+  const [searchTerm, setSearchTerm] = useState('');
+  const [playlistName, setPlaylistName] = useState('');
+  const [allTracks, setAllTracks] = useState([
     {
       id: "001",
       name: 'First Date',
@@ -190,15 +192,26 @@ function App() {
       album: "Don't Play That Song"
     },
   ]);
+  const [playlistState, setPlaylistState] = useState([]);
+
+  // handle change in inputs
+  const handleChangeST = (newST) => setSearchTerm(newST);
+  const handleChangePN = (newPN) => setPlaylistName(newPN);
 
   return (
     <div className="App">
       <div className="header">
         <h1>Ja<span className="mmsInsideJamming">mmm</span>ing</h1>
       </div>
-      <SearchBar />
+      <SearchBar
+        searchText={searchTerm}
+        handleTCinST={handleChangeST}
+      />
       <SearchResults
+        playlistNameInput={playlistName}
+        handleTCinPN={handleChangePN}
         tracklist={allTracks}
+        playlist={playlistState}
       />
     </div>
   );
